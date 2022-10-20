@@ -16,7 +16,7 @@ final class ItemDetailViewController: UIViewController {
     @IBOutlet private weak var bargainPriceLabel: UILabel!
     @IBOutlet private weak var descriptionTextView: UITextView!
     @IBOutlet private weak var myActivityIndicator: UIActivityIndicatorView!
-    private let myId = 83
+    private let myId = 1
     private let networkHandler = NetworkHandler()
     private var delegate: UpdateDelegate?
     private var itemDetail: ItemDetail? {
