@@ -17,15 +17,15 @@ struct ItemPage: Codable {
     let hasPrev: Bool
     
     private enum CodingKeys: String, CodingKey {
-        case pageNumber = "page_no"
-        case itemsPerPage = "items_per_page"
-        case totalCount = "total_count"
+        case pageNumber = "pageNo"
+        case itemsPerPage
+        case totalCount
         case offset
         case limit
         case items = "pages"
-        case lastPage = "last_page"
-        case hasNext = "has_next"
-        case hasPrev = "has_prev"
+        case lastPage
+        case hasNext
+        case hasPrev
     }
 }
 

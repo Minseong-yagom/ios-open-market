@@ -64,6 +64,7 @@ final class MainViewController: UIViewController {
                 self.items.append(contentsOf: itemPage.items)
                 self.hasNext = itemPage.hasNext
             case .failure(_):
+              DispatchQueue.main.async {
                 let alert = UIAlertController(title: "데이터로드 실패", message: "재시도 하시겠습니까?", preferredStyle: .alert)
                 let yesAction = UIAlertAction(title: "확인", style: .default) {_ in
                     self.getItemPage()
@@ -72,6 +73,7 @@ final class MainViewController: UIViewController {
                 alert.addAction(noAction)
                 alert.addAction(yesAction)
                 self.present(alert, animated: true, completion: nil)
+              }
             }
         }
     }

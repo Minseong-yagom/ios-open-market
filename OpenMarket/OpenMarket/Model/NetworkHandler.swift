@@ -9,7 +9,7 @@ import Foundation
 
 struct NetworkHandler {
     private let session: URLSessionProtocol
-    private let baseURL = "https://market-training.yagom-academy.kr/"
+    private let baseURL = "https://openmarket.yagom-academy.kr/"
     
     init(session: URLSessionProtocol = URLSession(configuration: .default)) {
         self.session = session
@@ -36,7 +36,7 @@ struct NetworkHandler {
         request.httpMethod = api.method.string
         
         if api.method != .get {
-            request.addValue("99051fa9-d1b8-11ec-9676-978c137c9bee", forHTTPHeaderField: "identifier")
+            request.addValue("c5b13912-43b9-11ed-8b9b-0956155ef06a", forHTTPHeaderField: "identifier")
         }
         
         if api.method == .post {
@@ -71,7 +71,7 @@ struct NetworkHandler {
                 \"currency\": \"\(components.currency)\",
                 \"discounted_price\": \(components.discountedPrice),
                 \"stock\": \(components.stock),
-                \"secret\": \"zsxn8cy106\",
+                \"secret\": \"soobak1234\",
                 \"descriptions\": \"\(components.descriptions)\"
                 }
                 """.data(using: .utf8)!

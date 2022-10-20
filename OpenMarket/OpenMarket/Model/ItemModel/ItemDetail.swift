@@ -43,14 +43,12 @@ struct ItemDetail: Codable, ItemAble {
         var id: Int
         var url: String
         var thumbNailURL: String
-        var succeed: Bool
         var issuedAt: String
         
         private enum CodingKeys: String, CodingKey {
             case id
             case url
             case thumbNailURL = "thumbnail_url"
-            case succeed
             case issuedAt = "issued_at"
         }
     }
@@ -58,14 +56,10 @@ struct ItemDetail: Codable, ItemAble {
     struct Vendor: Codable {
         var name: String
         var id: Int
-        var createdAt: String
-        var issuedAt: String
         
         private enum CodingKeys: String, CodingKey {
             case name
             case id
-            case createdAt = "created_at"
-            case issuedAt = "issued_at"
         }
     }
 }

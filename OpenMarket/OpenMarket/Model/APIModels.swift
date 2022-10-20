@@ -7,7 +7,7 @@
 import Foundation
 
 struct HealthCheckerAPI: APIable {
-    let host = "https://market-training.yagom-academy.kr/"
+    let host = "https://openmarket.yagom-academy.kr/"
     let path = "healthChecker"
     let params: [String : String]? = nil
     let method: HttpMethod = .get
@@ -16,7 +16,7 @@ struct HealthCheckerAPI: APIable {
 }
 
 struct ItemPageAPI: APIable {
-    let host = "https://market-training.yagom-academy.kr/"
+    let host = "https://openmarket.yagom-academy.kr/"
     let path = "api/products/"
     let pageNumber: Int
     let itemPerPage: Int
@@ -31,7 +31,7 @@ struct ItemPageAPI: APIable {
 
 struct ItemDetailAPI: APIable {
     let id: Int
-    let host = "https://market-training.yagom-academy.kr/"
+    let host = "https://openmarket.yagom-academy.kr/"
     var path: String {
         return "api/products/\(id)"
     }
@@ -51,7 +51,7 @@ struct ItemImageAPI: APIable {
 }
 
 struct PostItemAPI: APIable {
-    let host = "https://market-training.yagom-academy.kr/"
+    let host = "https://openmarket.yagom-academy.kr/"
     let path = "api/products/"
     let params: [String : String]? = nil
     let method: HttpMethod = .post
@@ -61,7 +61,7 @@ struct PostItemAPI: APIable {
 
 struct SecretAPI: APIable {
     let id: Int
-    let host = "https://market-training.yagom-academy.kr/"
+    let host = "https://openmarket.yagom-academy.kr/"
     var path: String {
         return "api/products/\(id)/secret"
     }
@@ -74,7 +74,7 @@ struct SecretAPI: APIable {
 struct DeleteAPI: APIable {
     let id: Int
     let secret: String
-    let host = "https://market-training.yagom-academy.kr/"
+    let host = "https://openmarket.yagom-academy.kr/"
     var path: String {
         return "api/products/\(id)/\(secret)"
     }
@@ -86,7 +86,7 @@ struct DeleteAPI: APIable {
 
 struct PatchAPI: APIable {
     let id: Int
-    let host = "https://market-training.yagom-academy.kr/"
+    let host = "https://openmarket.yagom-academy.kr/"
     var path: String {
         return "api/products/\(id)"
     }
