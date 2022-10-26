@@ -72,7 +72,7 @@ struct NetworkHandler {
                 \"discounted_price\": \(components.discountedPrice),
                 \"stock\": \(components.stock),
                 \"secret\": \"soobak1234\",
-                \"descriptions\": \"\(components.descriptions)\"
+                \"description\": \"\(components.description)\"
                 }
                 """.data(using: .utf8)!
         

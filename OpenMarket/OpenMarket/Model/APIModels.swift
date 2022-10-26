@@ -63,7 +63,7 @@ struct SecretAPI: APIable {
     let id: Int
     let host = "https://openmarket.yagom-academy.kr/"
     var path: String {
-        return "api/products/\(id)/secret"
+        return "api/products/\(id)/archived"
     }
     var params: [String : String]? = nil
     var method: HttpMethod = .post
@@ -74,9 +74,9 @@ struct SecretAPI: APIable {
 struct DeleteAPI: APIable {
     let id: Int
     let secret: String
-    let host = "https://openmarket.yagom-academy.kr/"
+    let host = "https://openmarket.yagom-academy.kr"
     var path: String {
-        return "api/products/\(id)/\(secret)"
+        return "\(secret)"
     }
     let params: [String : String]? = nil
     let method: HttpMethod = .delete

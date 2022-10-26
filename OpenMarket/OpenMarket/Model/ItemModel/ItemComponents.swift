@@ -13,6 +13,6 @@ struct ItemComponents {
     let currency: String
     let discountedPrice: Int
     let stock: Int
-    let descriptions: String
+    let description: String
     let imageArray: [UIImage]
 }

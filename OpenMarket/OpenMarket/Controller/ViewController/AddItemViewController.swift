@@ -173,7 +173,7 @@ final class AddItemViewController: UIViewController {
         let descriptions = descriptionTextView.text
         let httpDescription = descriptions?.replacingOccurrences(of: "\n", with: "\\n") ?? ""
         
-        let item = ItemComponents(name: name, price: price, currency: currency, discountedPrice: discountedPrice, stock: stock,  descriptions: httpDescription, imageArray: imageArray)
+        let item = ItemComponents(name: name, price: price, currency: currency, discountedPrice: discountedPrice, stock: stock,  description: httpDescription, imageArray: imageArray)
         
         if vcType == .add {
             return PostItemAPI(itemComponents: item)
