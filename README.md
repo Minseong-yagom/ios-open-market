@@ -1,34 +1,29 @@
 # 오픈 마켓 
-> 프로젝트 기간 2022-05-09 ~ 2022-06-03
+## 소개
+상품 목록을 (리스트/그리드)뷰 형식으로 보여주고, 자신의 상품을 등록, 수정 및 삭제를 할 수 있는 앱 입니다. 
 
-팀원 : [두기](https://github.com/doogie97), [minseong](https://github.com/Minseong-yagom) / 리뷰어 : [LinSaeng](https://github.com/jungseungyeo)
+## 팀원 소개
+|iOS|iOS|
+|:---:|:---:|
+|[Minseong](https://github.com/Minseong-yagom)|[Doogie](https://github.com/doogie97)|
+|<img width="150" src="https://avatars.githubusercontent.com/u/94295586?v=4"/>|<img width="150" src="https://i.imgur.com/T0UB5SD.jpg"/>|
+## 프로젝트 기간
+> 2022-05-09(월) ~ 2022-06-03(금) 리뷰어 : [LinSaeng](https://github.com/jungseungyeo)
+---
+## 목차
+- [1. 실행화면](#실행화면)
+- [2. 기능구현](#기능-구현)
+- [3. 트러블슈팅](#트러블-슈팅)
+- [4. 학습개념](#학습-개념)
 
 ## 실행화면
+|홈 화면|상품 등록|상품 상세|
+|:---:|:---:|:---:|
+|<img src="https://i.imgur.com/MqVxxBl.gif" width="300" height="500"/>|<img src="https://i.imgur.com/rQhtNvI.gif" width="300" height="500"/>|<img src="https://i.imgur.com/TrZE70w.gif" width="300" height="500"/>|
 
-1. 메인 화면
-
-<img src="https://i.imgur.com/WPCKs5e.gif" width="200" height="400"/>
-
-2. 상품 등록
-
-<img src="https://user-images.githubusercontent.com/82325822/171797609-1e70f6bd-fa49-4783-a844-b08fb0d8babb.gif" width="200" height="400"/>
-
-
-3. 상품 상세
-
-<img src="https://user-images.githubusercontent.com/82325822/171797761-d504648c-12eb-4316-803a-bd1639da253c.gif" width="200" height="400"/>
-
-4. 상품 수정
-
-<img src="https://user-images.githubusercontent.com/82325822/171797865-91922655-92c5-4d72-95d9-b0b57fe0a46c.gif" width="200" height="400"/>
-
-5. 상품 삭제
-
-<img src="https://user-images.githubusercontent.com/82325822/171797806-4a7a0e12-17c2-45f8-bf96-9072809967ac.gif" width="200" height="400"/>
-
-6. 새로고침
-
-<img src="https://i.imgur.com/UM0vTlt.gif" width="200" height="400"/>
+|상품 수정|상품 삭제|
+|:---:|:---:|
+|<img src="https://i.imgur.com/Dx1CODk.gif" width="300" height="500"/>|<img src="https://i.imgur.com/X8ymQ90.gif" width="300" height="500"/>|
 
 ## 기능 구현
 - 파싱한 JSON 데이터와 매핑할 모델 설계
@@ -42,7 +37,7 @@
 - URLSession을 활용한 multipart-form 요청 전송
 - UIImagePickerController 활용
 
-## Trouble Shooting
+## 트러블 슈팅
 ### 1. test만을를 위해 session을 var로 선언해야 하는지?
 ![](https://i.imgur.com/i6KLpct.png)
 
@@ -160,7 +155,7 @@ func getDate() {
 
 첫 번째에 예시로 작성했던 코드는 그대로 두고 뷰를 구성하는 로직들만 따로 메서드로 빼내 itemDetail에 변경사항이 생기면 뷰를 구성할 수 있도록 로직을 바꾸었으며 이는 getData를 통해 서버에서 정상적으로 data를 가져와 itemDetail에 할당하게 된다면 그 때야 비로소 뷰 구성이 진행될 수 있도록 수정
 
-## 배운 개념
+## 학습 개념
 - 프로토콜을 활용한 추상화
 - Collection View
 - UICollectionViewCompositionalLayout
