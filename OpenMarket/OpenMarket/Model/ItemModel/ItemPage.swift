@@ -33,11 +33,12 @@ struct Item: Codable, ItemAble {
     let id: Int
     let vendorId: Int
     let name: String
+    let description: String
     let thumbnail: String
     let currency: Currency.RawValue
-    let price: Int
-    let bargainPrice: Int
-    let discountedPrice: Int
+    let price: Double
+    let bargainPrice: Double
+    let discountedPrice: Double
     let stock: Int
     let createdAt: String
     let issuedAt: String
@@ -46,6 +47,7 @@ struct Item: Codable, ItemAble {
         case id
         case vendorId = "vendor_id"
         case name
+        case description
         case thumbnail
         case currency
         case price

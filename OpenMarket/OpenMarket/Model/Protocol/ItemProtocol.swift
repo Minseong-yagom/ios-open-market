@@ -11,9 +11,9 @@ protocol ItemAble {
     var name: String { get }
     var thumbnail: String { get }
     var currency: Currency.RawValue { get }
-    var price: Int { get }
-    var bargainPrice: Int { get }
-    var discountedPrice: Int { get }
+    var price: Double { get }
+    var bargainPrice: Double { get }
+    var discountedPrice: Double { get }
     var stock: Int { get }
     var createdAt: String { get }
     var issuedAt: String { get }

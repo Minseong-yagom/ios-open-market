@@ -12,10 +12,10 @@ struct ItemDetail: Codable, ItemAble {
     var thumbnail: String
     var currency: Currency.RawValue
     lazy var currencyIndex: Int? = Currency(rawValue: currency)?.index
-    var price: Int
+    var price: Double
     var description: String?
-    var bargainPrice: Int
-    var discountedPrice: Int
+    var bargainPrice: Double
+    var discountedPrice: Double
     var stock: Int
     var createdAt: String
     var issuedAt: String
